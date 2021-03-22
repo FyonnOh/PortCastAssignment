@@ -1,1 +1,13 @@
-Scrapy>=1.7.3
+databases==0.4.2
+fastapi==0.63.0
+greenlet==1.0.0
+gunicorn==20.0.4
+importlib-metadata==3.7.3
+postgres==3.0.0
+psycopg2-binary==2.8.6
+psycopg2-pool==1.1
+pydantic==1.8.1
+SQLAlchemy==1.4.2
+starlette==0.13.6
+typing-extensions==3.7.4.3
+zipp==3.4.1
