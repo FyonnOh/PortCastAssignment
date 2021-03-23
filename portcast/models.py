@@ -11,7 +11,7 @@ class Container(Base):
     final_pod = Column(String)
     final_pod_eta = Column(String)
 
-    transshipment = relationship("Transshipment", back_populates="container")
+    transshipments = relationship("Transshipment", back_populates="container")
 
 
 class Transshipment(Base):
@@ -26,4 +26,4 @@ class Transshipment(Base):
     loaded_location= Column(String)
     vessel= Column(String)
     container_id = Column(String, ForeignKey("containers.id"))
-    container = relationship("Container", back_populates="transshipment")
+    container = relationship("Container", back_populates="transshipments")

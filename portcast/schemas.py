@@ -3,6 +3,7 @@ from typing import List, Optional
 from pydantic import BaseModel
 
 
+
 class TransshipmentBase(BaseModel):
     is_loaded: bool
     is_discharged: bool
